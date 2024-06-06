@@ -1,0 +1,27 @@
+
+
+.about_header{
+    
+    margin: 23px auto 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+& a:nth-child(1){
+    color: rgb(51, 187, 121);
+}
+    a{
+        font-family: Quicksand;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        text-decoration: none;
+        margin-right: 29px;
+        color:  #7E7E7E; 
+
+        i{
+            font-size: small;
+        }
+    }
+}
+
+

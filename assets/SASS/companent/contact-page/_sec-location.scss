@@ -1,0 +1,48 @@
+
+
+.contact-location{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location-item{
+    
+    h5{
+        font-family: Quicksand;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        color: #3BB77E;
+        margin-bottom: 18px;
+    }
+    p{
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #7E7E7E;
+        margin-bottom: 24px;
+    }
+
+    a{
+        width: 116.27px;
+        height: 39.59px;
+        top: 159.8px;
+        left: 12px;
+        padding: 12px 18.61px 12.59px 19px;
+        gap: 0px;
+        border-radius: 4px;
+        opacity: 0px;
+        background: #3BB77E;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+
+     i{
+            font-size: small;
+        }
+    }
+}

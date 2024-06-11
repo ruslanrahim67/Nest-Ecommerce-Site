@@ -74,3 +74,12 @@
 
     }
 }
+
+
+//?-------------responsive------------
+
+@media(max-width:990px){
+    .statictic_item{
+        display: none;
+    }
+}

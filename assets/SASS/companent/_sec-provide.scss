@@ -1,7 +1,7 @@
 
 
 .provide{
-    max-width: 1240px;
+    // max-width: 1240px;
     text-align: center;
     margin: 57px auto;
 
@@ -65,4 +65,24 @@
         color: #3BB77E;
         margin-bottom: 30px;
     }
+}
+
+
+
+
+
+
+//?------------responsive-------------
+
+@media(max-width:990px){
+
+    .provide_content{
+        justify-content: space-between;
+    }
+
+    .provide_item{
+        width: calc((100% - 30px)/2);
+        padding: 10px;
+    }
+
 }

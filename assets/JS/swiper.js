@@ -122,3 +122,73 @@ $('.shop_content').slick({
 
                     
 //-------------------------about---------------------
+
+// $('.about_slider').slick({
+//   slidesToShow: 3,
+//   prevArrow: '.about_arrow_perv',
+//   nextArrow: '.about_arrow_next',
+//   responsive: [
+//   {
+//       breakpoint: 990,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         slidesToShow: 4
+//       }
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 3
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+
+
+$('.about_slider').slick({
+  slidesToShow: 3,
+  prevArrow: '.about_arrow_perv',
+  nextArrow: '.about_arrow_next',
+  responsive: [
+    {
+      breakpoint: 990,
+      settings: {
+        // centerMode: true,
+        // centerPadding: '30px',
+        slidesToShow: 4 ,
+      }
+    },
+
+
+    {
+      breakpoint: 768,
+      settings: {
+        // centerMode: true,
+        // centerPadding: '30px',
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});

@@ -27,6 +27,8 @@
 
 @import "./layout/test";
 
+@import"./pages/about";
+
 @import"./companent/about-header";
 
 @import"./companent/about-banner";
@@ -50,3 +52,9 @@
 @import"./companent/contact-page/sec-location";
 
 @import"./companent/contact-page/sec-form";
+
+@import"./companent/blog-page/blog-banner";
+
+@import"./companent/blog-page/blog-main-title";
+
+@import"./companent/sidebar-page/sidebar";

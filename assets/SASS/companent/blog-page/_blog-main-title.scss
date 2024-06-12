@@ -433,3 +433,16 @@ ul{
 }
 
 
+//----------responsive------------
+
+@media(max-width:990px){
+
+   
+    .blog-box .blog-box-item:nth-child(n+7){
+        display: none;
+    }
+
+    .blog-box-item{
+        width: calc(100% / 2 - 10px) !important;
+    }
+}

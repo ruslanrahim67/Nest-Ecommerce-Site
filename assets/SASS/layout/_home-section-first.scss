@@ -65,5 +65,21 @@ position: absolute;
 
 object-fit: cover;
 }
+
+.tabpanel-img2{
+    display: none;
+}
 }
 
+
+
+//----------responsive------
+
+@media(max-width:768px){
+    .tabpanel-img1{
+        display: none;
+    }
+    .tabpanel-img2{
+        display: block !important;
+    }
+}

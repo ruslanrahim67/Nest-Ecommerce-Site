@@ -128,3 +128,27 @@ footer{
     }
     
 }
+
+@media(max-width:550px){
+    .alt-content{
+        display: none;
+    }
+
+    img{
+        display: block;
+    }
+    .left-first{
+        display: block;
+
+        // img{
+        //     display: block;
+        // }
+    }
+
+    .sosial{
+        display: block;
+
+       
+    }
+
+}

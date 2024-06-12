@@ -11,6 +11,14 @@ $('.swiper-wrapper').slick({
   nextArrow: '<button><i class="fa-solid fa-arrow-right "></i></button>',
   responsive: [
     {
+      breakpoint: 990,
+      settings: {
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 5
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
         centerMode: true,
@@ -178,7 +186,7 @@ $('.about_slider').slick({
       settings: {
         // centerMode: true,
         // centerPadding: '30px',
-        slidesToShow: 4
+        slidesToShow: 3
       }
     },
     {
@@ -192,3 +200,27 @@ $('.about_slider').slick({
     }
   ]
 });
+
+
+
+
+
+
+
+// ----------------------------------
+
+
+
+// $('.fruit-tablist').slick({
+//   slidesToShow: 4,
+//   rows: 2,
+//   slidesToScroll: 4,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+//   easing: 'swing', // see http://api.jquery.com/animate/
+//     speed: 700,
+//     dots: true,
+//     customPaging: function(slick,index) {
+//         return '<a>' + (index + 1) + '</a>';
+//     }
+// });

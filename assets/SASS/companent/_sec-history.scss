@@ -11,7 +11,7 @@
         font-size: 32px;
         font-weight: 700;
         line-height: 38.4px;
-        text-align: left;
+        // text-align: left;
         color: #253D4E;
         margin-bottom: 30px;
     }
@@ -21,7 +21,20 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
-        text-align: left;
+        // text-align: left;
         color: #7E7E7E;
+    }
+}
+
+//--------responsive-------------
+
+
+@media(max-width:550px){
+    .our-hisrtory{
+        flex-direction: column;
+        
+        .our-hisrtory_item{
+            text-align: center !important;
+        }
     }
 }

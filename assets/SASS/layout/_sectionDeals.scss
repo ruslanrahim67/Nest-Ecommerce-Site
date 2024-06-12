@@ -184,6 +184,21 @@ flex-wrap: wrap;
     }
 
 
+    @media(max-width:550px){
+        .deals_content .deals_item:nth-child(n+2){
+            display: none;
+        }
+
+        .deals_item{
+            width: 100%;
+        }
+
+        .deals_title{
+            flex-wrap: wrap;
+        }
+    }
+
+
 
 
 

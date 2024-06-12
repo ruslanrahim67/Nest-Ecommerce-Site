@@ -66,3 +66,14 @@
         font-weight: bold;
     }
 }
+
+
+
+//-----------responsive---------
+
+
+@media(max-width:550px){
+    .shop_title{
+        flex-direction: column;
+    }
+}

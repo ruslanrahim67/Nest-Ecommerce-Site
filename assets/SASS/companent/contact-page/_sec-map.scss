@@ -6,5 +6,18 @@
 
     iframe{
         width: 100%;
+        
+    }
+}
+
+//---------responsive----------
+
+@media(max-width:768px){
+    .contact-map{
+        height: 200px;
+    }
+
+    iframe{
+        height: 100%;
     }
 }

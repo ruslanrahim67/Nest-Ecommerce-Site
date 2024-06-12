@@ -89,3 +89,9 @@
         padding-bottom: 69px;
     }
 }
+
+@media(max-width:550px){
+    .footer_bottom_content{
+        display: none;
+    }
+}

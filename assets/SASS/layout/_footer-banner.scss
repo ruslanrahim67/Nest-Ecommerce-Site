@@ -80,6 +80,24 @@
    } 
 }
 
+@media(max-width:550px){
+    
+
+    .banner-content{
+        height: 500px;
+        background-color: #9fadb7;
+
+        & img{
+            display: none !important;
+        }
+
+        p{
+            margin-top: 30px;
+            color: #084026;
+        }
+    }
+}
+
 
 
 

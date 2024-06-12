@@ -151,14 +151,18 @@ justify-content: center;
 
 
 }
-
-
-
    
 }
 
 
 //-----responsive---------
+
+@media(max-width:990px){
+    .fruit-tablist .tablist:last-child{
+        display: none;
+    }
+}
+
 @media screen and (max-width:768px) {
     .fruit-categories_content{
         display: block;
@@ -185,11 +189,22 @@ justify-content: center;
         
         
     }
+       
+}
 
-    
 
+@media(max-width:550px){
+    .fruit-categories{
+        display: none;
+    }
 
-        
+    .fruit-tablist .tablist:nth-child(n+5){
+        display: none;
+    }
+
+    .tablist{
+        width: 100% !important;
+    }
 }
     
         

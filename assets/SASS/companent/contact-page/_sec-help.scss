@@ -85,12 +85,30 @@
                 text-align: left;
                 color: #7E7E7E;
             }
-        }
-
-       
-
-       
+        } 
         
+    }
+}
+
+
+//---------responsive-------
+
+@media(max-width:990px){
+
+    .contact_help{
+        padding: 0 !important;
+    }
+    .help-title{
+        flex-direction: column;
+        width: 100% !important;
+        row-gap: 20px;
+    }
+
+    .help-item{
+        width: 100% !important;
+    }
+    .help-content{
+        width: 100% !important;
     }
 }
 

@@ -286,6 +286,16 @@ h3{
     }
 }
 
+@media(max-width:550px){
+        .best_sells_title{
+            padding: 40px;
+
+            .title_tabs{
+                display: none;
+            }
+        }
+    }
+
     
 
 

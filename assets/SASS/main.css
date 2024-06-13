@@ -1005,6 +1005,7 @@ h3 {
 }
 .Shop_by {
   margin-top: 80px;
+  display: none;
 }
 
 .shop_title {
@@ -1064,6 +1065,11 @@ h3 {
   font-weight: bold;
 }
 
+@media (max-width: 990px) {
+  .Shop_by {
+    display: block;
+  }
+}
 @media (max-width: 550px) {
   .shop_title {
     flex-direction: column;

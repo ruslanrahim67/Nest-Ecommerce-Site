@@ -153,6 +153,8 @@
                         <div class="show"><i class="fa-solid fa-qrcode"></i> <span>Show</span> <span><i class="fa-solid fa-sort-down"></i></span></div>
                         <div class="futured"><i class="fa-solid fa-arrow-down-wide-short"></i> Featured</div>
 
+                        <div class="aside-burger" onclick="toggleAside()">Show Aside</div>
+
                     </div>
 
                 </div>
@@ -188,7 +190,7 @@
 
                         <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
 
-                        <a href="#"><i class="fa-solid fa-shuffle"></i> Add Compare</a>
+                        <a href="#" class="son-a" id="son-a"><i class="fa-solid fa-shuffle"></i> Add Compare</a>
 
                     </div>
 
@@ -484,49 +486,56 @@
   
               </div>
 
-              <div class="sidebar-trending">
+              <div class="sidebar-aside-filter">
 
-                <h5>New Product</h5>
-  
-                <div class="trend-item">
-                  <img src="./assets/images/thumbnail-3.jpg.svg" alt="">
-                  <div>
-                    <h6>Chen Cardigan</h6>
-                    <span>$99.50</span>
-                    <span><i class="fa-solid fa-star"></i></span>
-  
+                <h5>Filter</h5>
+
+                <div class="filter-title">
+
+                  <div class="filter-range">
+
+                    <input type="range"> <br>
+                    <span>To: <span class="filter-range-price">$500</span> </span>
+
                   </div>
+
+                  <div class="filter-color">
+                    <h6>Color</h6>
+                    <form>
+                      <input type="radio" id="red" name="fav_language" value="Red(56)">
+                      <label for="red">RED(56)</label><br>
+                      <input type="radio" id="green" name="fav_language" value="Green">
+                      <label for="green">Green(78)</label><br>
+                      <input type="radio" id="blue" name="fav_language" value="blue">
+                      <label for="blue">Blue(123)</label>
+                    </form>
+
+                  </div>
+
+                  <div class="filter-condition">
+                    <h6>Item Condition</h6>
+                    <form>
+                      <input type="radio" id="new" name="fav_language" value="new">
+                      <label for="new">New (1506)</label><br>
+                      <input type="radio" id="refur" name="fav_language" value="refur">
+                      <label for="refur">Refurbished (27)</label><br>
+                      <input type="radio" id="used" name="fav_language" value="used">
+                      <label for="used">Used (45)</label>
+                    </form>
+
+                  </div>
+
+                  <div class="filter-link">
+
+                    <a href="#"> <i class="fa-solid fa-filter"></i> Fillter</a>
+                    <img src="./assets/images/banner-kahi.png" alt="">
+
+                  </div>
+
+
                 </div>
   
-                <div class="trend-item">
-                  <img src="./assets/images/thumbnail-4.jpg.png" alt="">
-                  <div>
-                    <h6>Chen Sweater</h6>
-                    <span>$99.50</span>
-                    <span><i class="fa-solid fa-star"></i></span>
-  
-                  </div>
-                </div>
-  
-                <div class="trend-item">
-                  <img src="./assets/images/thumbnail-5.jpg.png" alt="">
-                  <div>
-                    <h6>Colorful Jacket</h6>
-                    <span>$99.50</span>
-                    <span><i class="fa-solid fa-star"></i></span>
-  
-                  </div>
-                </div>
-  
-                <div class="trend-item">
-                  <img src="./assets/images/thumbnail-6.jpg.png" alt="">
-                  <div>
-                    <h6>Lorem, ipsum</h6>
-                    <span>$99.50</span>
-                    <span><i class="fa-solid fa-star"></i></span>
-  
-                  </div>
-                </div>
+                
   
               </div>
 

@@ -9,6 +9,7 @@
     gap: 10px;
 
     aside{
+        display: block;
         width: 30%;
         height: 100%;
         // background-color: bisque;
@@ -20,6 +21,7 @@
 
 .blog-content{
     width: 70%;
+    // width: 100%;
 }
 
 .main-header{
@@ -137,7 +139,9 @@
 }
 
 
-
+.aside-burger{
+    display: none;
+}
 
 //?-----aside-----------
 
@@ -148,48 +152,33 @@
     background-color: #fff;
     border: 1px solid #ECECEC;
     display: flex;
+    justify-content: flex-start;
    
 
     input{
         height: 100%;
-        padding: 0 20px;
+        padding: 0 2vw;
         background: none;
         border: none;
         flex-grow: 2;
     }
 
     button{
-        padding: 0 15px;
+        padding: 0 1vw;
         background: none;
         border: none;
         height: 100%;
-        font-size: xx-large;
+        font-size: clamp(16px, 2vw, 24px);
+          
+          
     }
 }
 
 .blog-category{
     background-color: #fff;
-    // box-shadow: 5px 5px 15px 0px #0000000D;
-
-    // h5{
-    //     
-    //     
-    //     position: relative;
-
-
-
-        // &::after{
-        //     content: "";
-        //     position: absolute;
-        //     left: 0;
-        //     bottom: -13px;
-        //     background: #BCE3C9;
-        //     width: 70px;
-        //     height: 3px;
-        //     box-sizing: border-box;  
-        // }
+     
         h5{
-            margin: 20px 30px;
+            // margin: 20px 30px;
             padding-bottom: 20px;
             border-bottom: 1px solid #ECECEC;
             font-family: Quicksand;
@@ -214,7 +203,7 @@
     }
 
     ul{
-        margin: 40px 30px;
+        margin: 40px 0px;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -259,7 +248,7 @@
 
 .blog-trending{
     background-color: #fff;
-    margin: 30px 31px;
+    margin: 30px 1px;
 
     h5{
         margin: 20px 30px;
@@ -292,7 +281,7 @@
     gap: 20px;
     border: 1px solid #00000026;
     margin-bottom: 10px;
-    margin: 10px 31px;
+    margin: 10px 1px;
 
     div{
         display: flex;
@@ -330,7 +319,7 @@
 .blog-galery{
 
     background-color: #fff;
-    margin: 30px 31px;
+    margin: 30px 1px;
 
     h5{
         margin: 20px 30px;
@@ -358,7 +347,7 @@
 }
 
 ul{
-    margin: 20px 30px;
+    margin: 20px 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -375,7 +364,7 @@ ul{
 .blog-popular{
 
     background-color: #fff;
-    margin: 30px 31px;
+    margin: 30px 1px;
 
     h5{
         margin: 20px 30px;
@@ -404,7 +393,7 @@ ul{
 
 
 ul{
-    margin: 20px 30px;
+    // margin: 20px 30px;
     padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -437,12 +426,87 @@ ul{
 
 @media(max-width:990px){
 
+    .blog-main-title{
+        position: relative;
+        aside{
+            // display: none ;
+            display: block;
+            position: absolute;
+            top: 42vh;
+            left: 0;
+             width: 90%;
+            //  height: 50vh;
+            background-color: #ffff ;
+            transform: translateX(-100%);
+            opacity: 1;
+            padding: 30px;
+            transition:0.9s linear;
+            z-index: 2;
+        }
+
+        // aside .blog-popular{
+        //     margin: 30px 0;
+        // }
+        aside.show2{
+            transform: translateX(0);
+        }
+    }
+
+    .aside-burger{
+        display: block;
+    }
+
+    .blog-content{
+        width: 100%;
+    }
    
+
     .blog-box .blog-box-item:nth-child(n+7){
         display: none;
     }
 
     .blog-box-item{
         width: calc(100% / 2 - 10px) !important;
+    }
+}
+
+
+@media(max-width:820px){
+    .main-header{
+        flex-direction: column;
+    }
+
+    .main-header-right{
+        margin-top: 30px;
+    }
+}
+
+
+@media(max-width:550px){
+
+    ul{
+        li{
+            width: 100%;
+        }
+    }
+    .blog-box-item{
+        width: 100% !important;
+    }
+
+    .blog-galery{
+        ul{
+            li{
+                width: calc(100% / 2 - 10px);
+            }
+        }
+    }
+
+    .blog-popular{
+        ul{
+            li{
+                width: 100%;
+                
+            }
+        }
     }
 }

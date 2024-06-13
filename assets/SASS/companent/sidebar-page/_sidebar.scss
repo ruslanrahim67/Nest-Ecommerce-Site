@@ -18,7 +18,7 @@ main{
 
     .sidebar-aside{
         width: 30%;
-        background-color: rgb(241, 241, 195);
+        // background-color: rgb(241, 241, 195);
     }
 }
 
@@ -116,6 +116,7 @@ main{
         .sidebar-item-price{
             margin-top: 15px;
             margin-bottom: 30px;
+
             & :first-child{
                 color: #3BB77E;
                 font-family: Quicksand;
@@ -171,7 +172,12 @@ main{
     }
 }
 
-
+.aside-burger{
+    display: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ECECEC;
+}
 
 //?------aside-----------
 
@@ -263,6 +269,127 @@ main{
 
 }
 
+.sidebar-aside-filter{
+    background-color: #fff;
+    margin: 30px 31px;
+
+    h5{
+        margin: 20px 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ECECEC;
+        font-family: Quicksand;
+         font-size: 24px;
+         font-weight: 700;
+         line-height: 28.8px;
+         text-align: left;
+         
+        position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        background: #BCE3C9;
+        width: 70px;
+        height: 4px;
+        box-sizing: border-box;
+        
+        // border-bottom: 1px solid #5b5959;
+    }
+}
+
+    & .filter-title{
+        margin: 30px 31px;
+        & .filter-range{
+           
+
+            input{
+                width: 100%;
+            }
+
+            & .filter-range-price:last-child{
+                color: #3BB77E;
+            }
+        }
+
+        & .filter-color{
+            margin-top: 20px;
+            h6{
+                font-family: Lato;
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 24px;
+                text-align: left;
+                color: #7E7E7E;
+                margin-bottom: 10px;
+            }
+
+            & form{
+                color: #687188;
+                font-size: 14px;
+
+                input{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        & .filter-condition{
+            margin-top: 20px;
+            h6{
+                font-family: Lato;
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 24px;
+                text-align: left;
+                color: #7E7E7E;
+                margin-bottom: 10px;
+            }
+
+            & form{
+                color: #687188;
+                font-size: 14px;
+
+                input{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        & .filter-link{
+           display: flex;
+           justify-content: space-between;
+           align-items: end;
+
+            a{
+                width: 109.03px;
+                height: 39.59px;
+                top: 434.52px;
+                left: 31px;
+                padding: 12px 18.68px 12.59px 29px;
+                gap: 0px;
+                border-radius: 4px;
+                opacity: 0px;
+                background-color: #3BB77E;
+                text-decoration: none;
+                color: #ffff;
+
+                i{
+                    font-size: x-small;
+                    margin-right: 5px;
+                }
+            }
+
+            img{
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+            }
+
+        }
+    }
+}
+
 .sidebar-trending{
     background-color: #fff;
     margin: 30px 31px;
@@ -330,3 +457,84 @@ main{
     }
 }
 }
+
+
+
+
+//---------responsive-----------
+
+@media(max-width:990px){
+    .sidebar-title{
+        .sidebar-content{
+            width: 100%;
+        }
+    }
+    // .sidebar-aside{
+    //     display: none;
+    // }
+
+    .aside-burger{
+        display: block;
+    }
+    .sidebar-title{
+        position: relative;
+        & .sidebar-aside{
+            // display: none ;
+            display: block;
+            position: absolute;
+            top: 135px;
+            left: 0;
+             width: 90%;
+            //  height: 50vh;
+            background-color: #ffff ;
+            transform: translateX(-100%);
+            opacity: 1;
+            padding: 30px;
+            transition:0.9s linear;
+            z-index: 2;
+        }
+
+        // aside .blog-popular{
+        //     margin: 30px 0;
+        // }
+        aside.show2{
+            transform: translateX(0);
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    .sidebar-box-item{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-link{
+        & img{
+            display: none !important;
+        }
+    }
+
+    .sidebar-item-title{
+        & a:last-child{
+            display: none;
+        }
+    }
+
+    .deals_of_day{
+        width: 100%;
+        .deals_content{
+            width: 100%;
+            .deals_item{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// @media(max-width:550px){
+//     .sidebar-aside{
+//         top: 60px !important;
+//     }
+// }
